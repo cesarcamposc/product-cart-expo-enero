@@ -4,13 +4,12 @@ import ProductsScreen from '../screens/ProductsScreen';
 import ProductDetailsScreen from '../screens/ProductDetailsScreen';
 import ShoppingCartScreen from '../screens/ShoppingCartScreen';
 import CartListItem from '../components/CartListItem';
+import Navigation from '../navigation/navigation'
 
 export default function index() {
   return (
     <View style={styles.container}>
-      {/* <ProductsScreen /> */}
-      {/* <ProductDetailsScreen /> */}
-      <ShoppingCartScreen/>    
+      <Navigation /> 
     </View>
   );
 }
