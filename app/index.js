@@ -5,12 +5,16 @@ import ProductDetailsScreen from '../screens/ProductDetailsScreen';
 import ShoppingCartScreen from '../screens/ShoppingCartScreen';
 import CartListItem from '../components/CartListItem';
 import Navigation from '../navigation/navigation'
+import { Provider } from 'react-redux';
+import { store } from '../store/store';
 
 export default function index() {
   return (
-    <View style={styles.container}>
-      <Navigation /> 
-    </View>
+    <Provider store={store}>
+      <View style={styles.container}>
+        <Navigation />
+      </View>
+    </Provider>
   );
 }
 
